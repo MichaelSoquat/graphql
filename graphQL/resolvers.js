@@ -29,5 +29,11 @@ module.exports = {
             password: password
         }
         return user
+    },
+    login({email, password}) {
+        const userId = Math.random().toString();
+        const token = Math.random().toString();
+        return { userId, token };
+
     }
 }
